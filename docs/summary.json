@@ -1,7 +1,7 @@
 {
  "apps": {
   "Angel One": {
-   "reviews": 800,
+   "reviews": 810,
    "from": "2026-10-27",
    "to": "2026-11-10",
    "negative_pct": 21.4,
@@ -10,25 +10,25 @@
    "negative_by_journey": [
     {
      "journey": "orders_trading",
-     "share_pct": 29.2,
+     "share_pct": 28.9,
      "count": 50,
      "top_issue": "crash_slow"
     },
     {
      "journey": "general",
-     "share_pct": 26.9,
-     "count": 46,
+     "share_pct": 27.7,
+     "count": 48,
      "top_issue": "other"
     },
     {
      "journey": "app_performance",
-     "share_pct": 14.6,
+     "share_pct": 14.5,
      "count": 25,
      "top_issue": "crash_slow"
     },
     {
      "journey": "charges_pricing",
-     "share_pct": 8.2,
+     "share_pct": 8.1,
      "count": 14,
      "top_issue": "unexpected_charges"
     },
@@ -40,13 +40,13 @@
     },
     {
      "journey": "funds",
-     "share_pct": 4.7,
+     "share_pct": 4.6,
      "count": 8,
      "top_issue": "delay"
     },
     {
      "journey": "onboarding_kyc",
-     "share_pct": 4.1,
+     "share_pct": 4.0,
      "count": 7,
      "top_issue": "failure"
     },
@@ -58,7 +58,7 @@
     },
     {
      "journey": "discovery_research",
-     "share_pct": 1.8,
+     "share_pct": 1.7,
      "count": 3,
      "top_issue": "missing_feature"
     },
@@ -85,17 +85,17 @@
    }
   },
   "Zerodha Kite": {
-   "reviews": 800,
+   "reviews": 801,
    "from": "2026-09-23",
    "to": "2026-11-10",
-   "negative_pct": 31.1,
-   "avg_stars": 3.6,
+   "negative_pct": 31.2,
+   "avg_stars": 3.59,
    "llm_labelled_pct": 100.0,
    "negative_by_journey": [
     {
      "journey": "orders_trading",
-     "share_pct": 61.8,
-     "count": 154,
+     "share_pct": 62.0,
+     "count": 155,
      "top_issue": "failure"
     },
     {
@@ -169,11 +169,11 @@
    }
   },
   "Groww": {
-   "reviews": 809,
+   "reviews": 827,
    "from": "2026-11-04",
    "to": "2026-11-10",
-   "negative_pct": 11.2,
-   "avg_stars": 4.43,
+   "negative_pct": 11.0,
+   "avg_stars": 4.44,
    "llm_labelled_pct": 100.0,
    "negative_by_journey": [
     {
@@ -253,12 +253,12 @@
    }
   },
   "Upstox": {
-   "reviews": 801,
+   "reviews": 803,
    "from": "2026-09-26",
    "to": "2026-11-10",
-   "negative_pct": 29.6,
+   "negative_pct": 29.5,
    "avg_stars": 3.68,
-   "llm_labelled_pct": 99.9,
+   "llm_labelled_pct": 100.0,
    "negative_by_journey": [
     {
      "journey": "general",
@@ -334,25 +334,25 @@
  "journey_gap": [
   {
    "journey": "general",
-   "angel_one_pct": 26.9,
+   "angel_one_pct": 27.7,
    "peer_avg_pct": 17.7,
-   "gap_pp": 9.2
+   "gap_pp": 10.1
   },
   {
    "journey": "app_performance",
-   "angel_one_pct": 14.6,
+   "angel_one_pct": 14.5,
    "peer_avg_pct": 8.7,
-   "gap_pp": 5.9
+   "gap_pp": 5.7
   },
   {
    "journey": "onboarding_kyc",
-   "angel_one_pct": 4.1,
+   "angel_one_pct": 4.0,
    "peer_avg_pct": 1.9,
-   "gap_pp": 2.2
+   "gap_pp": 2.1
   },
   {
    "journey": "discovery_research",
-   "angel_one_pct": 1.8,
+   "angel_one_pct": 1.7,
    "peer_avg_pct": 0.6,
    "gap_pp": 1.1
   },
@@ -360,7 +360,7 @@
    "journey": "account_access",
    "angel_one_pct": 3.5,
    "peer_avg_pct": 3.2,
-   "gap_pp": 0.3
+   "gap_pp": 0.2
   },
   {
    "journey": "support_service",
@@ -376,29 +376,40 @@
   },
   {
    "journey": "charges_pricing",
-   "angel_one_pct": 8.2,
+   "angel_one_pct": 8.1,
    "peer_avg_pct": 12.7,
-   "gap_pp": -4.5
+   "gap_pp": -4.6
   },
   {
    "journey": "funds",
-   "angel_one_pct": 4.7,
+   "angel_one_pct": 4.6,
    "peer_avg_pct": 9.9,
    "gap_pp": -5.2
   },
   {
    "journey": "orders_trading",
-   "angel_one_pct": 29.2,
+   "angel_one_pct": 28.9,
    "peer_avg_pct": 35.3,
-   "gap_pp": -6.0
+   "gap_pp": -6.4
   }
  ],
  "run": {
   "date": "2026-11-11",
-  "reviews_total": 3210,
-  "new_reviews": 10,
-  "llm_requests": 161,
+  "reviews_total": 3241,
+  "new_reviews": 31,
+  "llm_requests": 2,
   "llm_errors": [],
   "llm_used": true
+ },
+ "eval": {
+  "gold_reviews": 160,
+  "llm": {
+   "n": 160,
+   "journey_accuracy_pct": 88.8
+  },
+  "keyword_baseline": {
+   "n": 160,
+   "journey_accuracy_pct": 83.8
+  }
  }
 }
