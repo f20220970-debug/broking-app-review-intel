@@ -1,0 +1,410 @@
+{
+ "apps": {
+  "Angel One": {
+   "reviews": 800,
+   "from": "2026-10-27",
+   "to": "2026-11-10",
+   "negative_pct": 21.4,
+   "avg_stars": 3.97,
+   "llm_labelled_pct": 100.0,
+   "negative_by_journey": [
+    {
+     "journey": "general",
+     "share_pct": 26.3,
+     "count": 45,
+     "top_issue": "other"
+    },
+    {
+     "journey": "orders_trading",
+     "share_pct": 19.3,
+     "count": 33,
+     "top_issue": "failure"
+    },
+    {
+     "journey": "app_performance",
+     "share_pct": 15.2,
+     "count": 26,
+     "top_issue": "crash_slow"
+    },
+    {
+     "journey": "discovery_research",
+     "share_pct": 9.4,
+     "count": 16,
+     "top_issue": "missing_feature"
+    },
+    {
+     "journey": "charges_pricing",
+     "share_pct": 8.8,
+     "count": 15,
+     "top_issue": "unexpected_charges"
+    },
+    {
+     "journey": "support_service",
+     "share_pct": 7.0,
+     "count": 12,
+     "top_issue": "poor_support"
+    },
+    {
+     "journey": "funds",
+     "share_pct": 5.8,
+     "count": 10,
+     "top_issue": "delay"
+    },
+    {
+     "journey": "onboarding_kyc",
+     "share_pct": 4.1,
+     "count": 7,
+     "top_issue": "failure"
+    },
+    {
+     "journey": "account_access",
+     "share_pct": 3.5,
+     "count": 6,
+     "top_issue": "failure"
+    },
+    {
+     "journey": "portfolio_tracking",
+     "share_pct": 0.6,
+     "count": 1,
+     "top_issue": "delay"
+    }
+   ],
+   "quotes": {
+    "general": [
+     "bakwas",
+     "not bad"
+    ],
+    "orders_trading": [
+     "Worst app ever for trading.... Hangs too much. Better choose other apps. The basket order thing doesn't really work, can't open real time option chain it gets stuck on some differe",
+     "Automatic exit position after 80% loss. Very difficult for tradining. I uninstall this service app. Why is this auto exit at 80% loss, as we have balance in account too. We pay you"
+    ],
+    "app_performance": [
+     "Worst app for trading. hanging many times a day.",
+     "lagging issue. charts stuck issue. and customer care unable to solve"
+    ]
+   }
+  },
+  "Zerodha Kite": {
+   "reviews": 800,
+   "from": "2026-09-23",
+   "to": "2026-11-10",
+   "negative_pct": 31.1,
+   "avg_stars": 3.6,
+   "llm_labelled_pct": 100.0,
+   "negative_by_journey": [
+    {
+     "journey": "discovery_research",
+     "share_pct": 37.3,
+     "count": 93,
+     "top_issue": "crash_slow"
+    },
+    {
+     "journey": "orders_trading",
+     "share_pct": 22.5,
+     "count": 56,
+     "top_issue": "failure"
+    },
+    {
+     "journey": "general",
+     "share_pct": 8.4,
+     "count": 21,
+     "top_issue": "other"
+    },
+    {
+     "journey": "app_performance",
+     "share_pct": 7.6,
+     "count": 19,
+     "top_issue": "crash_slow"
+    },
+    {
+     "journey": "support_service",
+     "share_pct": 6.0,
+     "count": 15,
+     "top_issue": "poor_support"
+    },
+    {
+     "journey": "charges_pricing",
+     "share_pct": 6.0,
+     "count": 15,
+     "top_issue": "unexpected_charges"
+    },
+    {
+     "journey": "funds",
+     "share_pct": 4.0,
+     "count": 10,
+     "top_issue": "failure"
+    },
+    {
+     "journey": "account_access",
+     "share_pct": 3.6,
+     "count": 9,
+     "top_issue": "failure"
+    },
+    {
+     "journey": "portfolio_tracking",
+     "share_pct": 2.4,
+     "count": 6,
+     "top_issue": "failure"
+    },
+    {
+     "journey": "onboarding_kyc",
+     "share_pct": 2.0,
+     "count": 5,
+     "top_issue": "failure"
+    }
+   ],
+   "quotes": {
+    "discovery_research": [
+     "After last update, chart loading has become very sluggish on mobile and at times it never opens the chart. And earlier, in such case, we could press at refresh sign & it somehow wo",
+     "unable to load chart"
+    ],
+    "orders_trading": [
+     "chart \u0915\u094d\u092f\u094b\u0902 \u0928\u0939\u0940\u0902. \u0932\u094b\u0921 \u0939\u094b \u0930\u0939\u093e \u0939\u0948\u0902 \u0926\u094b \u0924\u0940\u0928 \u0926\u093f\u0928 \u0938\u0947",
+     "better SIP features are available in the previous version , which is not available now like we can set GTT order , stock SIP, and quantity together in a single basket order ."
+    ],
+    "general": [
+     "Company Ok, But Your app is old, see Upstox App They Developed every month and All Details User Friendly... Your App Total Waste",
+     "Sabse Dhatiya App, interface was no user friendly,"
+    ]
+   }
+  },
+  "Groww": {
+   "reviews": 800,
+   "from": "2026-11-04",
+   "to": "2026-11-10",
+   "negative_pct": 11.2,
+   "avg_stars": 4.43,
+   "llm_labelled_pct": 100.0,
+   "negative_by_journey": [
+    {
+     "journey": "funds",
+     "share_pct": 20.0,
+     "count": 18,
+     "top_issue": "delay"
+    },
+    {
+     "journey": "orders_trading",
+     "share_pct": 20.0,
+     "count": 18,
+     "top_issue": "failure"
+    },
+    {
+     "journey": "general",
+     "share_pct": 17.8,
+     "count": 16,
+     "top_issue": "other"
+    },
+    {
+     "journey": "charges_pricing",
+     "share_pct": 16.7,
+     "count": 15,
+     "top_issue": "unexpected_charges"
+    },
+    {
+     "journey": "app_performance",
+     "share_pct": 5.6,
+     "count": 5,
+     "top_issue": "crash_slow"
+    },
+    {
+     "journey": "discovery_research",
+     "share_pct": 5.6,
+     "count": 5,
+     "top_issue": "missing_feature"
+    },
+    {
+     "journey": "support_service",
+     "share_pct": 5.6,
+     "count": 5,
+     "top_issue": "poor_support"
+    },
+    {
+     "journey": "account_access",
+     "share_pct": 3.3,
+     "count": 3,
+     "top_issue": "missing_feature"
+    },
+    {
+     "journey": "portfolio_tracking",
+     "share_pct": 3.3,
+     "count": 3,
+     "top_issue": "delay"
+    },
+    {
+     "journey": "onboarding_kyc",
+     "share_pct": 2.2,
+     "count": 2,
+     "top_issue": "missing_feature"
+    }
+   ],
+   "quotes": {
+    "funds": [
+     "There is a very big issue from your platform, sometimes transactions go missing and sometimes transactions get doubled. I have to raise tickets or import external funds to solve th",
+     "I invested three or four years ago and have been trying to withdraw my funds for the last two years, but I'm unable to do so. I'm being told it's not possible because my Paytm Paym"
+    ],
+    "orders_trading": [
+     "app is good. but chart and prices especially strike prices take time longer than usual to refresh.... interface is good and simple. pls improve in above addressed issues.. still th",
+     "Hello Grow Team, I have a request for you: please include a 'Paper Trading' option in this application. This would allow users to thoroughly learn how to trade before investing any"
+    ],
+    "general": [
+     "yusuf ali saiyad",
+     "this is useless app"
+    ]
+   }
+  },
+  "Upstox": {
+   "reviews": 800,
+   "from": "2026-09-26",
+   "to": "2026-11-10",
+   "negative_pct": 29.6,
+   "avg_stars": 3.68,
+   "llm_labelled_pct": 99.9,
+   "negative_by_journey": [
+    {
+     "journey": "general",
+     "share_pct": 26.2,
+     "count": 62,
+     "top_issue": "other"
+    },
+    {
+     "journey": "charges_pricing",
+     "share_pct": 15.6,
+     "count": 37,
+     "top_issue": "unexpected_charges"
+    },
+    {
+     "journey": "orders_trading",
+     "share_pct": 13.1,
+     "count": 31,
+     "top_issue": "failure"
+    },
+    {
+     "journey": "app_performance",
+     "share_pct": 11.8,
+     "count": 28,
+     "top_issue": "crash_slow"
+    },
+    {
+     "journey": "support_service",
+     "share_pct": 10.1,
+     "count": 24,
+     "top_issue": "poor_support"
+    },
+    {
+     "journey": "funds",
+     "share_pct": 8.4,
+     "count": 20,
+     "top_issue": "delay"
+    },
+    {
+     "journey": "discovery_research",
+     "share_pct": 7.2,
+     "count": 17,
+     "top_issue": "failure"
+    },
+    {
+     "journey": "portfolio_tracking",
+     "share_pct": 4.2,
+     "count": 10,
+     "top_issue": "failure"
+    },
+    {
+     "journey": "account_access",
+     "share_pct": 3.0,
+     "count": 7,
+     "top_issue": "failure"
+    },
+    {
+     "journey": "onboarding_kyc",
+     "share_pct": 0.4,
+     "count": 1,
+     "top_issue": "confusing_ux"
+    }
+   ],
+   "quotes": {
+    "general": [
+     "The basics of this app are not right and they keep updating on a weekly or early basis without informing their customers and as per response received the first and foremost priorit",
+     "Please change the interface keep update app but old interface was quiet good then the current one... Current one looks like very gich gich..."
+    ],
+    "charges_pricing": [
+     "Their charges are one of the highest as compared to Grow and Zerodha. When looking at the total charges it really hurts the pocket. Planning to close the account and switch to some",
+     "one of the most complicated trading app among peers.Not user friendly,not compatible,more bugs.When is comes to charges more brokerage, high AMC and even to withdraw money instantl"
+    ],
+    "orders_trading": [
+     "Is there any proper developer or tester in your technical team? You rolled out a mandatory update today and after that, I can able to only blank charts in Spot, stocks and options ",
+     "Options trading is nothing but a scam that tricks people into losing their money.\u201d"
+    ]
+   }
+  }
+ },
+ "journey_gap": [
+  {
+   "journey": "general",
+   "angel_one_pct": 26.3,
+   "peer_avg_pct": 17.5,
+   "gap_pp": 8.9
+  },
+  {
+   "journey": "app_performance",
+   "angel_one_pct": 15.2,
+   "peer_avg_pct": 8.3,
+   "gap_pp": 6.9
+  },
+  {
+   "journey": "onboarding_kyc",
+   "angel_one_pct": 4.1,
+   "peer_avg_pct": 1.6,
+   "gap_pp": 2.5
+  },
+  {
+   "journey": "orders_trading",
+   "angel_one_pct": 19.3,
+   "peer_avg_pct": 18.5,
+   "gap_pp": 0.8
+  },
+  {
+   "journey": "account_access",
+   "angel_one_pct": 3.5,
+   "peer_avg_pct": 3.3,
+   "gap_pp": 0.2
+  },
+  {
+   "journey": "support_service",
+   "angel_one_pct": 7.0,
+   "peer_avg_pct": 7.2,
+   "gap_pp": -0.2
+  },
+  {
+   "journey": "portfolio_tracking",
+   "angel_one_pct": 0.6,
+   "peer_avg_pct": 3.3,
+   "gap_pp": -2.7
+  },
+  {
+   "journey": "charges_pricing",
+   "angel_one_pct": 8.8,
+   "peer_avg_pct": 12.8,
+   "gap_pp": -4.0
+  },
+  {
+   "journey": "funds",
+   "angel_one_pct": 5.8,
+   "peer_avg_pct": 10.8,
+   "gap_pp": -5.0
+  },
+  {
+   "journey": "discovery_research",
+   "angel_one_pct": 9.4,
+   "peer_avg_pct": 16.7,
+   "gap_pp": -7.3
+  }
+ ],
+ "run": {
+  "date": "2026-11-11",
+  "reviews_total": 3200,
+  "new_reviews": 3200,
+  "llm_requests": 160,
+  "llm_errors": [],
+  "llm_used": true
+ }
+}
