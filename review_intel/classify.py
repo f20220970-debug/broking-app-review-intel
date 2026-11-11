@@ -4,6 +4,8 @@ Batches of 20 reviews per request; the model must return JSON with labels from t
 invalid or missing falls back to the keyword baseline for that review, and the `method` column records which one
 labelled it. Labels are cached in data/labels.csv, so each review is classified once (free-tier daily quotas)."""
 import csv, json, os, re, time, urllib.request, urllib.error
+
+PROMPT_VERSION = "2"   # bump when the prompt changes: older LLM labels are redone
 from pathlib import Path
 from .taxonomy import JOURNEYS, ISSUES, keyword_label
 
@@ -11,7 +13,9 @@ PROMPT = """You label app-store reviews of an Indian stock-broking app.
 For each review return its user journey and main issue, using ONLY these ids.
 journeys: {journeys}
 issues: {issues}
-Rules: pick the journey the complaint or praise is about (e.g. 'money not credited after withdrawal' -> funds;
+Rules: charts, watchlists, option chain, market depth, order placement and positions are orders_trading.
+discovery_research is ONLY recommendations, research reports, screeners, stock ideas, advisory and news.
+Pick the journey the complaint or praise is about (e.g. 'money not credited after withdrawal' -> funds;
 'video KYC keeps failing' -> onboarding_kyc; 'app freezes at 9:15' -> orders_trading if it blocks trading, else
 app_performance). Use 'general' only when no journey applies. Reviews may be in Hinglish.
 Return a JSON list: [{{"rid": "...", "journey": "...", "issue": "..."}}] and nothing else.
@@ -58,7 +62,8 @@ def parse(text, batch_ids):
 
 def classify(rows, cache_path: Path, llm=None, batch=20, max_requests=400):
     cache = {r["rid"]: r for r in csv.DictReader(open(cache_path))} if cache_path.exists() else {}
-    todo = [r for r in rows if r["rid"] not in cache or cache[r["rid"]]["method"] == "keyword"]
+    todo = [r for r in rows if r["rid"] not in cache or cache[r["rid"]]["method"] == "keyword"
+            or cache[r["rid"]].get("v", "1") != PROMPT_VERSION]
     errors, requests = [], 0
     if llm is not None:
         for i in range(0, len(todo), batch):
@@ -74,11 +79,11 @@ def classify(rows, cache_path: Path, llm=None, batch=20, max_requests=400):
                 errors.append(str(e)[:120]); got = {}
             for r in chunk:
                 if r["rid"] in got:
-                    cache[r["rid"]] = {"rid": r["rid"], "journey": got[r["rid"]][0], "issue": got[r["rid"]][1], "method": "llm"}
+                    cache[r["rid"]] = {"rid": r["rid"], "journey": got[r["rid"]][0], "issue": got[r["rid"]][1], "method": "llm", "v": PROMPT_VERSION}
     for r in rows:
         if r["rid"] not in cache:
             j, i = keyword_label(r["text"])
-            cache[r["rid"]] = {"rid": r["rid"], "journey": j, "issue": i, "method": "keyword"}
+            cache[r["rid"]] = {"rid": r["rid"], "journey": j, "issue": i, "method": "keyword", "v": PROMPT_VERSION}
     with open(cache_path, "w", newline="") as f:
-        w = csv.DictWriter(f, ["rid", "journey", "issue", "method"]); w.writeheader(); w.writerows(cache.values())
+        w = csv.DictWriter(f, ["rid", "journey", "issue", "method", "v"], restval="1"); w.writeheader(); w.writerows(cache.values())
     return cache, {"llm_requests": requests, "llm_errors": errors[:5]}

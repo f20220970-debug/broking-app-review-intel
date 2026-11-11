@@ -67,3 +67,16 @@ def test_report_gap_and_eval(tmp_path):
     assert s["eval"]["keyword_baseline"]["journey_accuracy_pct"] == 100.0
     html = report.page(s)
     assert "Real Person" not in html and "Angel One vs peers" in html
+
+
+def test_prompt_version_bump_relabels(tmp_path):
+    rows = fetch.fetch_all(10, fetcher=fake_fetcher)
+    lab = lambda p: json.dumps([{"rid": json.loads(l)["rid"], "journey": "general", "issue": "other"} for l in p.split("Reviews:\n")[1].splitlines()])
+    classify.classify(rows, tmp_path / "l.csv", llm=lab)
+    old = classify.PROMPT_VERSION
+    try:
+        classify.PROMPT_VERSION = "99"; calls = []
+        classify.classify(rows, tmp_path / "l.csv", llm=lambda p: (calls.append(1), lab(p))[1])
+        assert calls, "labels from an older prompt must be redone"
+    finally:
+        classify.PROMPT_VERSION = old
